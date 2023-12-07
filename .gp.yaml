@@ -11,3 +11,13 @@ runbooks:
   - type: jsonPathSelector
     selector: '{.metadata.name}=attachdetach-controller'
   doc: test/test.md
+- name: test1
+  desc: test1
+  selectors:
+  - type: labelSelector
+    selector: app=test
+  - type: jsonPathSelector
+    selector: '{.apiVersion}=v1'
+  - type: jsonPathSelector
+    selector: '{.metadata.name}=attachdetach-controller'
+  doc: test/test1.md
