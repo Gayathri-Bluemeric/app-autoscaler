@@ -9,9 +9,5 @@ runbooks:
   - type: jsonPathSelector
     selector: '{.apiVersion}=v1'
   - type: jsonPathSelector
-    selector: '{.kind}=ServiceAccount'
-  - type: jsonPathSelector
     selector: '{.metadata.name}=attachdetach-controller'
-  - type: jsonPathSelector
-    selector: '{.metadata.namespace}=kube-system'
   doc: test/test.md
